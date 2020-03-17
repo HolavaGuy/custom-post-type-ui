@@ -579,6 +579,10 @@ function cptui_import_types_taxes_settings( $postdata = [] ) {
 		return false;
 	}
 
+	if ( ! check_admin_referer( 'cptui_typetaximport_nonce_action', 'cptui_typetaximport_nonce_field' ) ) {
+		return 'nonce_fail';
+	}
+
 	$status  = 'import_fail';
 	$success = false;
 
@@ -750,6 +754,7 @@ function cptui_render_posttypes_taxonomies_section() {
 					<p>
 						<input class="button button-primary" type="submit" value="<?php esc_attr_e( 'Import', 'custom-post-type-ui' ); ?>" />
 					</p>
+					<?php wp_nonce_field( 'cptui_typetaximport_nonce_action', 'cptui_typetaximport_nonce_field' ); ?>
 				</form>
 			</td>
 			<td class="outer">
@@ -788,6 +793,7 @@ function cptui_render_posttypes_taxonomies_section() {
 					<p>
 						<input class="button button-primary" type="submit" value="<?php esc_attr_e( 'Import', 'custom-post-type-ui' ); ?>" />
 					</p>
+					<?php wp_nonce_field( 'cptui_typetaximport_nonce_action', 'cptui_typetaximport_nonce_field' ); ?>
 				</form>
 			</td>
 			<td class="outer">
