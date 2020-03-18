@@ -31,7 +31,7 @@ Official development of Custom Post Type UI is on GitHub, with official stable r
 
 == Changelog ==
 
-= 1.7.4 - TBD =
+= 1.7.4 - 2020-03-17 =
 * Added: Nonce admin verification for import functionality.
 * Added: Extra escaping of markup and output for "Get Code" areas.
 
@@ -102,7 +102,7 @@ Official development of Custom Post Type UI is on GitHub, with official stable r
 
 == Upgrade Notice ==
 
-= 1.7.4 - TBD =
+= 1.7.4 - 2020-03-17 =
 * Added: Nonce admin verification for import functionality.
 * Added: Extra escaping of markup and output for "Get Code" areas.
 
