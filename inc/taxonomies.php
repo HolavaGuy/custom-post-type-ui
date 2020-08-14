@@ -1286,6 +1286,7 @@ function cptui_delete_taxonomy( $data = [] ) {
 			$success = update_option( 'cptui_taxonomies', $taxonomies );
 		}
 	}
+	delete_option( "default_term_{$data['cpt_custom_tax']['name']}" );
 
 	/**
 	 * Fires after a taxonomy is deleted from our saved options.
@@ -1330,6 +1331,9 @@ function cptui_update_taxonomy( $data = [] ) {
 	if ( empty( $data['cpt_custom_tax']['name'] ) ) {
 		return cptui_admin_notices( 'error', '', false, esc_html__( 'Please provide a taxonomy name', 'custom-post-type-ui' ) );
 	}
+
+	// Maybe a little harsh, but we shouldn't be saving THAT frequently.
+	delete_option( "default_term_{$data['cpt_custom_tax']['name']}" );
 
 	if ( empty( $data['cpt_post_types'] ) ) {
 		add_filter( 'cptui_custom_error_message', 'cptui_empty_cpt_on_taxonomy' );
