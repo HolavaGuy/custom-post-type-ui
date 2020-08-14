@@ -31,10 +31,13 @@ Official development of Custom Post Type UI is on GitHub, with official stable r
 
 == Changelog ==
 
+<<<<<<< HEAD
 = 1.7.5 - 2020-08-11 =
 * Updated: Addressed UI issues with WordPress 5.5.0
 * Updated: Moved required minimum WordPress version to 5.5.0
 
+=======
+>>>>>>> 0cc58adc5af5fdd4b516400fcb2cbdabb88c29b1
 = 1.7.4 - 2020-03-17 =
 * Added: Nonce admin verification for import functionality.
 * Added: Extra escaping of markup and output for "Get Code" areas.
@@ -106,10 +109,13 @@ Official development of Custom Post Type UI is on GitHub, with official stable r
 
 == Upgrade Notice ==
 
+<<<<<<< HEAD
 = 1.7.5 - 2020-08-11 =
 * Updated: Addressed UI issues with WordPress 5.5.0
 * Updated: Moved required minimum WordPress version to 5.5.0
 
+=======
+>>>>>>> 0cc58adc5af5fdd4b516400fcb2cbdabb88c29b1
 = 1.7.4 - 2020-03-17 =
 * Added: Nonce admin verification for import functionality.
 * Added: Extra escaping of markup and output for "Get Code" areas.
