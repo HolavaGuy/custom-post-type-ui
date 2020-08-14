@@ -78,7 +78,7 @@ postboxes.add_postbox_toggles(pagenow);
 			value = transliterate(value);
 			value = replaceSpecialCharacters(value);
 			if ( value !== original_value ) {
-				$(this).attr('value', value);
+				$(this).prop('value', value);
 			}
 		}
 
