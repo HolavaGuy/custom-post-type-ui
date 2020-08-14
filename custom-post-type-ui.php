@@ -677,6 +677,19 @@ function cptui_register_single_taxonomy( $taxonomy = [] ) {
 	if ( ! empty( $taxonomy['meta_box_cb'] ) ) {
 		$meta_box_cb = ( false !== get_disp_boolean( $taxonomy['meta_box_cb'] ) ) ? $taxonomy['meta_box_cb'] : false;
 	}
+	$default_term = null;
+	if ( ! empty( $taxonomy['default_term'] ) ) {
+		$term_parts = explode(',', $taxonomy['default_term'] );
+		if ( ! empty( $term_parts[0] ) ) {
+			$default_term['name'] = trim( $term_parts[0] );
+		}
+		if ( ! empty( $term_parts[1] ) ) {
+			$default_term['slug'] = trim( $term_parts[1] );
+		}
+		if ( ! empty( $term_parts[2] ) ) {
+			$default_term['description'] = trim( $term_parts[2] );
+		}
+	}
 
 	$args = [
 		'labels'                => $labels,
@@ -696,6 +709,7 @@ function cptui_register_single_taxonomy( $taxonomy = [] ) {
 		'rest_controller_class' => $rest_controller_class,
 		'show_in_quick_edit'    => $show_in_quick_edit,
 		'meta_box_cb'           => $meta_box_cb,
+		'default_term'          => $default_term,
 	];
 
 	$object_type = ! empty( $taxonomy['object_types'] ) ? $taxonomy['object_types'] : '';
