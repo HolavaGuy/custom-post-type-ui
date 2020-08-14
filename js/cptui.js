@@ -131,8 +131,11 @@ postboxes.add_postbox_toggles(pagenow);
 	}
 
 	function replaceSpecialCharacters(s) {
-
-		s = s.replace(/[^a-z0-9\s]/gi, '_');
+		if ( 'cpt-ui_page_cptui_manage_post_types' === window.pagenow ) {
+			s = s.replace(/[^a-z0-9\s-]/gi, '_');
+		} else {
+			s = s.replace(/[^a-z0-9\s]/gi, '_');
+		}
 
 		return s;
 	}
