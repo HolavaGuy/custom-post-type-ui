@@ -183,22 +183,6 @@ postboxes.add_postbox_toggles(pagenow);
 		return false;
 	});
 
-	$('#togglelabels').on('click',function(e){
-		e.preventDefault();
-		$('#labels_expand').toggleClass('toggledclosed');
-	});
-	$('#togglesettings').on('click',function(e) {
-		e.preventDefault();
-		$('#settings_expand').toggleClass('toggledclosed');
-	});
-	$('#labels_expand,#settings_expand').on('focus',function(e) {
-		if ( $(this).hasClass('toggledclosed') ) {
-			$(this).toggleClass('toggledclosed');
-		}
-	});
-	$('#labels_expand legend,#settings_expand legend').on('click',function(e){
-		$(this).parent().toggleClass('toggledclosed');
-	});
 	$('.cptui-help').on('click',function(e){
 		e.preventDefault();
 	});
