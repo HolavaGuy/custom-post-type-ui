@@ -437,7 +437,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 [Gary Jones]: https://github.com/GaryJones
 
-[Unreleased]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.5.8...HEAD
+[Unreleased]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.6.2...HEAD
+[1.6.2]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.6.1...1.6.2
+[1.6.1]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.6.0...1.6.1
+[1.6.0]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.5.8...1.6.0
 [1.5.8]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.5.7...1.5.8
 [1.5.7]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.5.6...1.5.7
 [1.5.6]: https://github.com/WebDevStudios/custom-post-type-ui/compare/1.5.5...1.5.6
